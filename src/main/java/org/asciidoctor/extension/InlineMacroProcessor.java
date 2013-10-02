@@ -10,7 +10,6 @@ public abstract class InlineMacroProcessor extends MacroProcessor {
     
     public InlineMacroProcessor(String macroName, DocumentRuby documentRuby) {
         super(macroName, documentRuby);
-        //ByteList pattern = ByteList.create("\\?" + macroName + ":(\\S+?)\\[((?:\\\\]|[^\\]])*?)\\]");
         ByteList pattern = ByteList.create(macroName + ":(\\S+?)\\[.*?\\]");
         regexp = RubyRegexp.newRegexp(rubyRuntime, pattern);
     }

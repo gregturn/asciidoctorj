@@ -3,7 +3,6 @@ package org.asciidoctor.extension;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.asciidoctor.internal.Block;
 import org.asciidoctor.internal.Document;
 import org.asciidoctor.internal.DocumentRuby;
 

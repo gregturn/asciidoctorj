@@ -21,7 +21,6 @@ public class YellBlock extends BlockProcessor {
         config.put("content_model", ":simple");
     }
   
-    // TODO accept instance-scoped options (i.e., additional config)
     public YellBlock(String context, DocumentRuby documentRuby) {
         super(context, documentRuby);
     }

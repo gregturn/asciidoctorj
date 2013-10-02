@@ -140,7 +140,10 @@ public class WhenExtensionIsRegistered {
                 "target/test-classes/sample-with-man-link.ad"),
                 new Options());
         
-        System.out.println(content);
+        Document doc = Jsoup.parse(content, "UTF-8");
+        Element link = doc.getElementsByTag("a").first();
+        assertThat(link.attr("href"), is("gittutorial.html"));
+        
     }
     
     @Test
